@@ -1,0 +1,283 @@
+nav {
+  margin-top: 2rem;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+nav .container .icon {
+  display: none;
+}
+nav .container .icon .minu {
+  border-bottom: 2px solid #FB8F1D;
+  border-top: 2px solid #FB8F1D;
+  width: 1.5rem;
+  height: 1rem;
+  position: relative;
+}
+nav .container .icon .minu::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 2px;
+  background-color: #FB8F1D;
+  position: absolute;
+  top: 50%;
+}
+nav .container .logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+}
+nav .container .logo .caver-cercle {
+  background: #1ABE84;
+  border-radius: 50%;
+  padding: 0.65rem;
+}
+nav .container .logo .caver-cercle .white-cercle {
+  border-radius: inherit;
+  background-color: white;
+  padding: 0.25rem;
+}
+nav .container .logo .caver-cercle .white-cercle .center-cercle {
+  border-radius: 50%;
+  width: 1.12rem;
+  height: 1.12rem;
+  background: linear-gradient(0deg, #FB8F1D, #FB8F1D), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+nav .container .nav-links_and_log_sin {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+nav .container .nav-links_and_log_sin ul {
+  width: 45%;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 0;
+}
+nav .container .nav-links_and_log_sin ul li {
+  margin: auto;
+  color: #B8BECD;
+}
+nav .container .nav-links_and_log_sin ul li:hover {
+  color: #000;
+  transform: scale(1.02);
+}
+nav .container .nav-links_and_log_sin .nav_log_sin {
+  width: 31%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+nav .container .nav-links_and_log_sin .nav_log_sin .nav_login,
+nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester {
+  margin: auto;
+  width: 45%;
+  height: 2.75rem;
+  border-radius: 0.6rem;
+  border: #FB8F1D 0.1rem solid;
+  background-color: #FFFFFF;
+}
+nav .container .nav-links_and_log_sin .nav_log_sin .nav_login:hover,
+nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester:hover {
+  transform: scale(1.02);
+}
+nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester {
+  background-color: #FB8F1D;
+  color: #FFFFFF;
+}
+
+.hero .hero-content {
+  position: relative;
+}
+.hero .hero-content .explore {
+  width: 50%;
+}
+.hero .hero-content .holiday-finder {
+  width: 20%;
+  padding-bottom: 0.5rem;
+}
+.hero .hero-content .holiday-finder::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  background-color: #242424;
+  width: 1.55rem;
+  top: 90%;
+  left: 2.5%;
+}
+.hero .inputs_hero {
+  margin-bottom: 4rem;
+  margin-left: 0.008rem;
+}
+.hero .inputs_hero * {
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding: 6px;
+  border-radius: 0.4rem;
+  background-color: #FFFFFF;
+  border: #AFB0B9 1px solid;
+  color: #4A4C53;
+  width: 45%;
+  height: 50%;
+}
+
+@media (max-width: 992px) {
+  nav {
+    margin-top: 2rem;
+  }
+  nav .container {
+    position: relative;
+  }
+  nav .container .icon {
+    display: block;
+  }
+  nav .container .icon .minuw::after {
+    width: 100%;
+  }
+  nav .container .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+  }
+  nav .container .logo .caver-cercle {
+    background: #1ABE84;
+    border-radius: 50%;
+    padding: 0.6rem;
+  }
+  nav .container .logo .caver-cercle .white-cercle {
+    border-radius: inherit;
+    background-color: white;
+    padding: 0.22rem;
+  }
+  nav .container .logo .caver-cercle .white-cercle .center-cercle {
+    border-radius: 50%;
+    width: 1.12rem;
+    height: 1.12rem;
+    background: linear-gradient(0deg, #FB8F1D, #FB8F1D), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  }
+  nav .container .nav-links_and_log_sin {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 85%;
+    top: 80%;
+    display: none;
+    z-index: 1;
+  }
+  nav .container .nav-links_and_log_sin ul {
+    width: 40%;
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+  }
+  nav .container .nav-links_and_log_sin ul li {
+    margin-bottom: 0.3rem;
+  }
+  nav .container .nav-links_and_log_sin ul li a:hover {
+    color: #000;
+    transform: scale(1.02);
+  }
+  nav .container .nav-links_and_log_sin .nav_log_sin {
+    width: 31%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  nav .container .nav-links_and_log_sin .nav_log_sin .nav_login,
+  nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester {
+    margin: auto;
+    width: 8.25rem;
+    height: 2.75rem;
+    border-radius: 0.6rem;
+    border: #FB8F1D 0.1rem solid;
+    background-color: #FFFFFF;
+    margin-bottom: 0.5rem;
+  }
+  nav .container .nav-links_and_log_sin .nav_log_sin .nav_login:hover,
+  nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester:hover {
+    transform: scale(1.02);
+  }
+  nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester {
+    background-color: #FB8F1D;
+    color: #FFFFFF;
+  }
+}
+.Feaured_view {
+  text-align: right;
+  color: #FB8F1D;
+}
+
+.t-view {
+  text-align: left;
+  color: #FB8F1D;
+}
+
+.Feaured_img img,
+.Testimonials_img img {
+  border-radius: 10px;
+}
+
+footer {
+  padding-top: 2.5rem;
+  margin-top: 5rem;
+  background-color: #F9F9FB;
+}
+footer .row_foo {
+  color: #848484;
+}
+footer .row_foo ul li:first-child {
+  font-weight: bold;
+  font-size: large;
+  color: #000;
+}
+footer .row_foo * {
+  list-style-type: none;
+}
+footer .row_foo * li {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #B8BECD;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn_brimary {
+  margin-left: 0.7rem;
+  width: 8.25rem;
+  height: 2.75rem;
+  border-radius: 0.6rem;
+  border: #FB8F1D 0.1rem solid;
+  background-color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  background-color: #FB8F1D;
+  color: #FFFFFF;
+}
+.btn_brimary:hover {
+  transform: scale(1.02);
+}
+
+section {
+  margin-top: 3.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

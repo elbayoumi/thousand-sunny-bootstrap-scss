@@ -1,0 +1,288 @@
+
+nav {
+    margin-top: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // padding-top: 1rem;
+
+        // text-align: center;
+        cursor: pointer;
+
+        .icon {
+            display: none;
+
+            .minu {
+                border-bottom: 2px solid $primary-color;
+                border-top: 2px solid $primary-color;
+                width: 1.5rem;
+                height: 1rem;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 1rem;
+                    height: 2px;
+                    background-color: $primary-color;
+                    position: absolute;
+                    top: 50%;
+
+                }
+            }
+        }
+
+        .logo {
+            width: 2.5rem;
+            height: 2.5rem;
+            align-content: center;
+            align-items: center;
+            display: flex;
+            margin-bottom: 0;
+
+            .caver-cercle {
+                background: #1ABE84;
+                border-radius: 50%;
+                padding: .65rem;
+
+
+                .white-cercle {
+
+                    border-radius: inherit;
+                    background-color: white;
+                    padding: .25rem;
+
+                    .center-cercle {
+                        border-radius: 50%;
+                        width: 1.12rem;
+                        height: 1.12rem;
+                        background: linear-gradient(0deg, $primary-color, $primary-color),
+                            linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                    }
+                }
+            }
+        }
+
+        .nav-links_and_log_sin {
+            width: 80%;
+            display: flex;
+            justify-content: end;
+            flex-wrap: wrap;
+
+            ul {
+                width: 45%;
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end;
+                margin: 0;
+
+                li {
+                    margin: auto;
+                    color: $color-li;
+
+                    &:hover {
+                        color: #000;
+                        transform: scale(1.02)
+                    }
+                }
+            }
+
+            .nav_log_sin {
+                width: 31%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end;
+
+                .nav_login,
+                .nav_regester {
+                    margin: auto;
+                    width: 45%;
+                    height: 2.75rem;
+                    border-radius: .6rem;
+                    border: #FB8F1D .1rem solid;
+                    background-color: $color-white;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+
+                .nav_regester {
+                    background-color: $primary-color;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    .hero-content {
+        position: relative;
+        .explore{
+            width: 50%;
+        }
+        .holiday-finder {
+            width: 20%;
+            padding-bottom: .5rem;
+
+            &::after {
+
+                position: absolute;
+                content: "";
+                height: 1.5px;
+                background-color: #242424;
+                width: 1.55rem;
+                // margin-left: 15px;
+                top: 90%;
+                left: 2.5%;
+
+            }
+
+        }
+
+    }
+
+    .inputs_hero {
+        margin-bottom: 4rem;
+margin-left: .008rem;
+        * {
+            margin-right: 5%;
+            margin-bottom: 5%;
+            padding: 6px;
+            border-radius: .4rem;
+            background-color: #FFFFFF;
+            border: #AFB0B9 1px solid;
+            color: #4A4C53;
+            width: 45%;
+            height: 50%;
+            // *{
+            //     width: 45%;
+            // }
+        }
+    }
+
+}
+
+@include medQuery(max, 992px) {
+    nav {
+        margin-top: 2rem;
+
+        .container {
+
+            // padding-top: 1rem;
+
+            // text-align: center;
+            position: relative;
+
+            .icon {
+                display: block;
+
+                .minuw::after {
+                    width: 100%;
+                }
+            }
+
+            .logo {
+                width: 2.5rem;
+                height: 2.5rem;
+                align-content: center;
+                align-items: center;
+                display: flex;
+                margin-bottom: 0;
+
+                .caver-cercle {
+                    background: #1ABE84;
+                    border-radius: 50%;
+                    padding: .6rem;
+
+
+                    .white-cercle {
+
+                        border-radius: inherit;
+                        background-color: white;
+                        padding: .22rem;
+
+                        .center-cercle {
+                            border-radius: 50%;
+                            width: 1.12rem;
+                            height: 1.12rem;
+                            background: linear-gradient(0deg, $primary-color, $primary-color),
+                                linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                        }
+                    }
+                }
+            }
+
+            .nav-links_and_log_sin {
+                width: 30%;
+                display: flex;
+                justify-content: end;
+                flex-wrap: wrap;
+                position: absolute;
+                left: 85%;
+                top: 80%;
+
+                display: none;
+                z-index: 1;
+
+
+                ul {
+                    width: 40%;
+                    list-style-type: none;
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    // justify-content: end;
+
+                    margin-bottom: .5rem;
+
+
+                    li {
+                        margin-bottom: .3rem;
+
+                        & a:hover {
+                            color: #000;
+                            transform: scale(1.02)
+                        }
+                    }
+                }
+
+                .nav_log_sin {
+                    width: 31%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: end;
+
+                    .nav_login,
+                    .nav_regester {
+                        margin: auto;
+                        width: 8.25rem;
+                        height: 2.75rem;
+                        border-radius: .6rem;
+                        border: #FB8F1D .1rem solid;
+                        background-color: $color-white;
+                        margin-bottom: .5rem;
+
+                        &:hover {
+                            transform: scale(1.02);
+                        }
+                    }
+
+                    .nav_regester {
+                        background-color: $primary-color;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @include medQuery(max,540px){
+//     .hero figure .hero-img{
+//         width: 100%;
+//     }
+// }

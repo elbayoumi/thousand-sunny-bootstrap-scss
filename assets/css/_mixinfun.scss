@@ -1,0 +1,14 @@
+// 767
+@mixin medQuery ( $width,$maxWidth) {
+    @if ($width==max){
+    @media (max-width: $maxWidth) {
+        @content
+    }
+
+    } 
+  @if($width==min){
+        @media (min-width: $maxWidth) {
+            @content
+        }
+}
+}

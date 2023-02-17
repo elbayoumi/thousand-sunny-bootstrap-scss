@@ -1,0 +1,40 @@
+@import './_var.scss';
+@import './_mixinfun';
+@import'./hero';
+@import'./_Feaured';
+
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//     border: 1px solid #000;
+// }
+a {
+    text-decoration: none;
+    color: $color-li;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+.btn_brimary{
+    margin-left: .7rem;
+    width: 8.25rem;
+    height: 2.75rem;
+    border-radius: .6rem;
+    border: #FB8F1D .1rem solid;
+    background-color: $color-white;
+    margin-bottom: .5rem;
+    background-color: $primary-color;
+    color: $color-white;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+
+section {
+    margin-top: 3.5rem;
+}
