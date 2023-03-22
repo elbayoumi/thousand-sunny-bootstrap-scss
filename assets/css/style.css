@@ -26,7 +26,7 @@ nav .container .icon .minu::after {
   position: absolute;
   top: 50%;
 }
-nav .container .logo {
+.logo {
   width: 2.5rem;
   height: 2.5rem;
   align-content: center;
@@ -34,17 +34,17 @@ nav .container .logo {
   display: flex;
   margin-bottom: 0;
 }
-nav .container .logo .caver-cercle {
+.logo .caver-cercle {
   background: #1ABE84;
   border-radius: 50%;
   padding: 0.65rem;
 }
-nav .container .logo .caver-cercle .white-cercle {
+.logo .caver-cercle .white-cercle {
   border-radius: inherit;
   background-color: white;
   padding: 0.25rem;
 }
-nav .container .logo .caver-cercle .white-cercle .center-cercle {
+.logo .caver-cercle .white-cercle .center-cercle {
   border-radius: 50%;
   width: 1.12rem;
   height: 1.12rem;
@@ -144,7 +144,7 @@ nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester {
   nav .container .icon .minuw::after {
     width: 100%;
   }
-  nav .container .logo {
+.logo {
     width: 2.5rem;
     height: 2.5rem;
     align-content: center;
@@ -152,17 +152,17 @@ nav .container .nav-links_and_log_sin .nav_log_sin .nav_regester {
     display: flex;
     margin-bottom: 0;
   }
-  nav .container .logo .caver-cercle {
+.logo .caver-cercle {
     background: #1ABE84;
     border-radius: 50%;
     padding: 0.6rem;
   }
-  nav .container .logo .caver-cercle .white-cercle {
+ .logo .caver-cercle .white-cercle {
     border-radius: inherit;
     background-color: white;
     padding: 0.22rem;
   }
-  nav .container .logo .caver-cercle .white-cercle .center-cercle {
+  .logo .caver-cercle .white-cercle .center-cercle {
     border-radius: 50%;
     width: 1.12rem;
     height: 1.12rem;
